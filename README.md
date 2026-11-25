@@ -10,16 +10,16 @@ This skill trains and guides the AI agent to operate as a disciplined software e
 
 ```mermaid
 flowchart TD
-    A[Discover Tickets in tickets/] --> B[Pick Lowest Pending Ticket: {nnnn}-{name_slug}.md]
-    B --> C[Read Ticket & Clarify at first ---]
-    C -->|Questions Exist| D[Ask in Console & Log to Ticket]
-    C -->|Clear| E[Log Clear Status]
-    D --> F[Create Branch: git checkout -b {nnnn}-{name_slug}]
+    A["Discover Tickets in tickets/"] --> B["Pick Lowest Pending Ticket: {nnnn}-{name_slug}.md"]
+    B --> C["Read Ticket & Clarify at first ---"]
+    C -->|Questions Exist| D["Ask in Console & Log to Ticket"]
+    C -->|Clear| E["Log Clear Status"]
+    D --> F["Create Branch: git checkout -b {nnnn}-{name_slug}"]
     E --> F
-    F --> G[Implement Code & Run Tests]
-    G --> H[Append Completion Summary at second ---]
-    H --> I[Rename Ticket to {nnnn}-{name_slug}.complete.md]
-    I --> J[git commit & git push origin {nnnn}-{name_slug}]
+    F --> G["Implement Code & Run Tests"]
+    G --> H["Append Completion Summary at second ---"]
+    H --> I["Rename Ticket to {nnnn}-{name_slug}.complete.md"]
+    I --> J["git commit & git push origin {nnnn}-{name_slug}"]
 ```
 
 ---
